@@ -3,8 +3,10 @@
  */
 
 export function isvalidUsername(str) {
-  const valid_map = ['admin', 'editor']
-  return valid_map.indexOf(str.trim()) >= 0
+  /* 用户名校验规则 */
+  /* const valid_map = ['123'] */
+  /* return valid_map.indexOf(str.trim()) >= 0 */
+  return 1
 }
 
 /* 合法uri*/
