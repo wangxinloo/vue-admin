@@ -7,3 +7,4 @@ module.exports = merge(prodEnv, {
   /* BASE_API: '"https://easy-mock.com/mock/5950a2419adc231f356a6636/vue-admin"', */
   BASE_API: '"https://easy-mock.com/mock/5ac1e9e3cb45541720f4248c/vue-admin"',
 })
+
