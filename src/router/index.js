@@ -72,7 +72,18 @@ export const constantRouterMap = [
     ]
   },
 
-  { path: '*', redirect: '/404', hidden: true }
+  {
+    path: '/form2',
+    component: Layout,
+    children: [
+      {
+        path: 'index',
+        name: 'Form2',
+        component: () => import('@/views/form/index'),
+        meta: { title: '表单2', icon: 'form' }
+      }
+    ]
+  }
 ]
 
 export default new Router({
@@ -92,10 +103,12 @@ export const asyncRouterMap = [
       component: _import('permission/index'),
       name: 'permission',
       meta: {
-        title: 'permission',
+        title: '权限测试',
         icon: 'lock',
         roles: ['admin'] // or you can only set roles in sub nav
       }
     }]
-  }
+  },
+
+  { path: '*', redirect: '/404', hidden: true }
 ]
